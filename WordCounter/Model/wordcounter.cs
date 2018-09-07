@@ -3,7 +3,7 @@ using System;
 
 namespace WordCounterModels
 {
-  public class WordCounter
+  public class RepeatCounter
   {
     private string _word;
     public string GetString()
@@ -15,7 +15,7 @@ namespace WordCounterModels
     {
       _word = word;
     }
-    private string _phrase ="I like to eat pizza";
+    private string _phrase;
     public string GetSentence()
     {
       return _phrase;
@@ -24,19 +24,18 @@ namespace WordCounterModels
     {
       _phrase = phrase;
     }
+     public static void Main()
+     {
+       Console.WriteLine("Please enter a word");
+       string word = Console.ReadLine();
 
-    public static void Main()
-    {
-      Console.WriteLine("Please enter a word");
-      string word = Console.ReadLine();
+       Console.WriteLine("Please enter a sentence");
+       string phrase = Console.ReadLine();
+       string[] splitPhrase = phrase.Split(' ');
 
-      Console.WriteLine("Please enter a sentence");
-      string phrase = Console.ReadLine();
-      string[] splitPhrase = phrase.Split(' ');
+       var results = Array.FindAll(splitPhrase, s => s.Equals(word));
 
-      var results = Array.FindAll(splitPhrase, s => s.Equals(word));
-
-      Console.WriteLine("The word "+ word + " occurs " + results.Length + " times in your sentence.");
+       Console.WriteLine("The word "+ word + " occurs " + results.Length + " times in your sentence.");
     }
   }
 }
