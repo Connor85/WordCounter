@@ -24,17 +24,4 @@ using WordCounterModels;
     string result = check.GetSentence();
     Assert.AreEqual(phrase, result);
     }
-    [TestMethod]
-    public void ReturnsCount_ReturnsACount_ReturnsReturnCount ()
-    {
-      RepeatCounter check = new RepeatCounter();
-      string word = "pizza";
-      string splitPhrase = "pizza pizza pizza";
-
-      check.SetString(word);
-      check.SetSentence(splitPhrase);
-      int matches = RepeatCounter.Main();
-
-      Assert.AreEqual(3, matches);
-    }
 }

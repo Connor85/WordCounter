@@ -24,18 +24,19 @@ namespace WordCounterModels
     {
       _phrase = phrase;
     }
-     public static void Main()
-     {
-       Console.WriteLine("Please enter a word");
-       string word = Console.ReadLine();
 
-       Console.WriteLine("Please enter a sentence");
-       string phrase = Console.ReadLine();
-       string[] splitPhrase = phrase.Split(' ');
+    public static void Main()
+    {
+      Console.WriteLine("Please enter a word");
+      string word = Console.ReadLine();
 
-       var results = Array.FindAll(splitPhrase, s => s.Equals(word));
+      Console.WriteLine("Please enter a sentence");
+      string phrase = Console.ReadLine();
+      string[] splitPhrase = phrase.Split(' ');
 
-       Console.WriteLine("The word "+ word + " occurs " + results.Length + " times in your sentence.");
+      var results = Array.FindAll(splitPhrase, s => s.Equals(word));
+
+      Console.WriteLine("The word "+ word + " occurs " + results.Length + " times in your sentence.");
     }
   }
 }
