@@ -33,7 +33,10 @@ namespace WordCounterModels
       Console.WriteLine("Please enter a sentence");
       string phrase = Console.ReadLine();
       string[] splitPhrase = phrase.Split(' ');
-      foreach (var value in splitPhrase)
+
+      var results = Array.FindAll(splitPhrase, s => s.Equals(word));
+
+      Console.WriteLine("The word "+ word + " occurs " + results.Length + " times in your sentence.");
     }
   }
 }
