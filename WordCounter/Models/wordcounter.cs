@@ -9,6 +9,12 @@ namespace WordCounter
     private string _word;
     public int matches = 0;
 
+    public RepeatCounter(string word, string phrase)
+    {
+      _word = word;
+      _phrase = phrase;
+    }
+
     public void SetPhrase(string phrase)
     {
       _phrase = phrase;
