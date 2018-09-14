@@ -1,42 +1,44 @@
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
-namespace WordCounterModels
+namespace WordCounter
 {
   public class RepeatCounter
   {
-    private string _word;
-    public string GetString()
-    {
-      return _word;
-    }
-
-    public void SetString(string word)
-    {
-      _word = word;
-    }
     private string _phrase;
-    public string GetSentence()
-    {
-      return _phrase;
-    }
-    public void SetSentence(string phrase)
+    private string _word;
+    public int matches = 0;
+
+    public void SetPhrase(string phrase)
     {
       _phrase = phrase;
     }
-
-    public static void Main()
+    public string GetPhrase()
     {
-      Console.WriteLine("Please enter a word");
-      string word = Console.ReadLine();
-
-      Console.WriteLine("Please enter a sentence");
-      string phrase = Console.ReadLine();
-      string[] splitPhrase = phrase.Split(' ');
-
-      var results = Array.FindAll(splitPhrase, s => s.Equals(word));
-
-      Console.WriteLine("The word "+ word + " occurs " + results.Length + " times in your sentence.");
+      return _phrase;
+    }
+    public void SetWord(string word)
+    {
+      _word = word;
+    }
+    public string GetWord()
+    {
+      return _word;
+    }
+    public string[] SplitString()
+    {
+      return _phrase.Split(' ');
+    }
+    public int WordCount()
+    {
+      foreach(string wordMatch in SplitString())
+      {
+        if(wordMatch.Equals(_word))
+        {
+          matches ++;
+        }
+      }
+      return matches;
     }
   }
 }

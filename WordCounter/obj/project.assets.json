@@ -6716,11 +6716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ConnorMcCarthy/Desktop/WordCounter.Solution/WordCounter/wordcouter.csproj",
+      "projectUniqueName": "/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/wordcouter.csproj",
       "projectName": "wordcouter",
-      "projectPath": "/Users/ConnorMcCarthy/Desktop/WordCounter.Solution/WordCounter/wordcouter.csproj",
+      "projectPath": "/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/wordcouter.csproj",
       "packagesPath": "/Users/ConnorMcCarthy/.nuget/packages/",
-      "outputPath": "/Users/ConnorMcCarthy/Desktop/WordCounter.Solution/WordCounter/obj/",
+      "outputPath": "/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ConnorMcCarthy/.nuget/NuGet/NuGet.Config"

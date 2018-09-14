@@ -1,27 +1,46 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
-using WordCounterModels;
+using WordCounter;
 
-
+namespace WordCounter.Tests
+{
   [TestClass]
-  public class WordCheckerTest
+  public class WordCounterTests
   {
     [TestMethod]
-    public void ReturnString_ReturnsAString_ReturnsReturnString ()
+    public void Return_ReturnsAPhrase_ReturnsReturnphrase()
     {
-    RepeatCounter check = new RepeatCounter();
-    string phrase = "pizza";
-    check.SetString(phrase);
-    string result = check.GetString();
-    Assert.AreEqual(phrase, result);
+      string input = "pizza";
+      RepeatCounter newCount = new RepeatCounter();
+
+      newCount.SetPhrase(input);
+      string result = newCount.GetPhrase();
+
+      Assert.AreEqual(input, result);
     }
     [TestMethod]
-    public void Returnphrase_ReturnsAPhrase_ReturnsReturnPhrase ()
+    public void Return_SplitString_ReturnSplitString()
     {
-    RepeatCounter check = new RepeatCounter();
-    string phrase = "I like to eat pizza";
-    check.SetSentence(phrase);
-    string result = check.GetSentence();
-    Assert.AreEqual(phrase, result);
+      string inputString = "pizza pizza pizza";
+      string[] inputArr = {"pizza", "pizza", "pizza"};
+      RepeatCounter newCount = new RepeatCounter();
+
+      newCount.SetPhrase(inputString);
+      string[] result = newCount.SplitString();
+
+      CollectionAssert.AreEqual(inputArr, result);
     }
+    [TestMethod]
+    public void Match_CountWordMatches()
+    {
+      string inputString = "pizza pizza large";
+      string inputWord = "pizza";
+      RepeatCounter newCount = new RepeatCounter();
+
+      newCount.SetPhrase(inputString);
+      newCount.SetWord(inputWord);
+      int wordMatches = newCount.WordCount();
+
+      Assert.AreEqual(2, wordMatches);
+    }
+  }
 }

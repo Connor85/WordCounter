@@ -5,3 +5,10 @@
 /Users/ConnorMcCarthy/Desktop/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.AssemblyInfo.cs
 /Users/ConnorMcCarthy/Desktop/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.dll
 /Users/ConnorMcCarthy/Desktop/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.pdb
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0/wordcouter.deps.json
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0/wordcouter.dll
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0/wordcouter.pdb
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.csproj.CoreCompileInputs.cache
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.AssemblyInfo.cs
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.dll
+/Users/ConnorMcCarthy/Desktop/Epicodus/c#/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0/wordcouter.pdb
